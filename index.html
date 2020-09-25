@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tickets</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-user">
+                <span class="header-user__item">Usuario:</span>
+            </div>
+            <div class="header-title">
+                <span class="header-title__item">Módulo Asistencia Técnica</span>
+            </div>
+            <div class="header-exit">
+                <span class="header-exit__item"><a href="#" class="header-exit--link">Regresar</a></span>
+            </div>
+        </div>
+    </header>
+    <section>
+        
+        <div class="main-left" id="main-left">
+            <form action="#" id="formulario">
+            <div class="main-left--Title">
+                Solicitud de Atención Técnica
+            </div>
+            <div class="boxUser">
+                <div class="boxUser-solicitud">
+                    <div class="title-solicitud">Tipo Solicitud</div>
+                    <div class="boxUser--radio">
+                     <label id="label_individual">Para mi  <input type="radio" name="rbtSolicitudI" id="rbtSolicitudI" value="individual" ></label>  
+                    <label id="label_partner">Para mi compañero  <input type="radio" name="rbtSolicitudP" id="rbtSolicitudP" value="partner"></label> 
+                    </div>
+                </div>
+                <div class="boxUser-partner" id="boxUser-partner">
+                    <div class="boxUserSupervisor">
+                        <span>Cuál es tu Supervisor?: </span>
+                        <select name="cboSupervisor" id="cboSupervisor" class="cboSupervisor" >
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                    <div class="boxUserUsuario">
+                        <span>Usuario:</span>
+                        <select name="cboUsuario" id="cboUsuario" class="cboUsuario" >
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                    
+                </div>
+             
+            </div>
+            <div class="observacion">
+                <p>Ingrese el motivo:</p>
+                <textarea name="txtObsv" id="obsv-texto"  class="obsv-texto">
+                    
+                </textarea>
+            </div>
+            <button class="button" id="button">Enviar</button>
+          </form>
+        </div>
+        
+        <div class="main-rigth" id="main-rigth">Derecha</div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
